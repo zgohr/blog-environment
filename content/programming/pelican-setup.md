@@ -52,7 +52,6 @@ git pull stephane master
 Thank you, [Stephane Raimbault](https://github.com/stephane). And because I'm going to be hacking up the theme for myself, a simple fork and remote will work out nice...
 
 ``` shell
-cd pelican-themes
 git remote rename origin upstream
 git remote add origin git@github.com:zgohr/pelican-themes.git
 git push origin master
