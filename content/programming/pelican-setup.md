@@ -128,8 +128,11 @@ WARNING: PAGE_SAVE_AS = '{date:%Y}/{date:%m}/pages/{slug}.html'
 WARNING: PAGE_LANG_SAVE_AS = '{date:%Y}/{date:%m}/pages/{slug}-{lang}.html'
 ```
 
-But now my article links are broken. A quick look at the Pelican 3.0 [docs](http://pelican.notmyidea.org/en/latest/settings.html#url-settings) show there is another new setting called ```ARTICLE_SAVE_AS```.
-This setting lets you save the static file as a different name than where its links point to. This is nice so that your links go directly to the slug that is pretty, while the page gets saved as an index.html.
+Not only that, now my article links are broken.
+A quick look at the Pelican 3.0 [docs](http://pelican.notmyidea.org/en/latest/settings.html#url-settings) show there two new important settings called ```ARTICLE_URL``` and ```ARTICLE_SAVE_AS```.
+These settings lets you save the static file as a different name than where its links point to. This is nice so your links go directly to a pretty slug, while the page gets saved as an index.html.
+
+The update for settings.py is as follows:
 
 ```
 ARTICLE_URL = '/posts/{date:%Y}/{date:%m}/{slug}/'
